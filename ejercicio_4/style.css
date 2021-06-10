@@ -1,0 +1,74 @@
+body,
+html {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario_registro {
+  width: 400px;
+  height: 500px;
+  border: solid 2px;
+  border-radius: 4px;
+  display: flex;
+}
+
+.formulario_registro h2 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.formulario_registro section {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.nombre input {
+  width: 180px;
+  height: 45px;
+}
+
+.dni input {
+  width: 150px;
+  height: 45px;
+}
+
+.mail input {
+  width: 210px;
+  height: 45px;
+}
+
+.contraseña input {
+  width: 180px;
+  height: 45px;
+  margin-left: 3px;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.boton label {
+  font-size: 0.8rem;
+}
+
+input[type="submit"] {
+  background-color: rgb(68, 156, 228);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 160px;
+  height: 50px;
+}

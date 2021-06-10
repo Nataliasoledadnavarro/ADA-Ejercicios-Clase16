@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Pago</title>
+  </head>
+  <body>
+    <section class="formulario_pago">
+      <form action="/pagos" method="POST">
+        <div>
+          <label for="numero_tarjeta"> Número de tarjeta de crédito</label>
+          <input type="text" name="numero_tarjeta" id="numero_tarjeta" />
+        </div>
+        <br />
+        <div>
+          <label for="nombre_completo">Nombre completo del titular</label>
+          <input type="text" name="nombre_del_titular" id="nombre_completo" />
+        </div>
+        <label for="mes_tarjeta">Mes</label>
+        <select>
+          <option name="mes_tarjeta" value="01" id="mes_tarjeta">01</option>
+          <option name="mes_tarjeta" value="02" id="mes_tarjeta">02</option>
+          <option name="mes_tarjeta" value="03" id="mes_tarjeta">03</option>
+          <option name="mes_tarjeta" value="04" id="mes_tarjeta">04</option>
+          <option name="mes_tarjeta" value="05" id="mes_tarjeta">05</option>
+          <option name="mes_tarjeta" value="06" id="mes_tarjeta">06</option>
+          <option name="mes_tarjeta" value="07" id="mes_tarjeta">07</option>
+          <option name="mes_tarjeta" value="08" id="mes_tarjeta">08</option>
+          <option name="mes_tarjeta" value="09" id="mes_tarjeta">09</option>
+          <option name="mes_tarjeta" value="10" id="mes_tarjeta">10</option>
+          <option name="mes_tarjeta" value="11" id="mes_tarjeta">11</option>
+          <option name="mes_tarjeta" value="12" id="mes_tarjeta">12</option>
+        </select>
+        <br />
+        <br />
+        <lebel for="año_tarjeta">Año</lebel>
+        <select>
+          <option name="año_tarjeta" value="2021" id="año_tarjeta">2021</option>
+          <option name="año_tarjeta" value="2022" id="año_tarjeta">2022</option>
+          <option name="año_tarjeta" value="2023" id="año_tarjeta">2023</option>
+          <option name="año_tarjeta" value="2024" id="año_tarjeta">2024</option>
+          <option name="año_tarjeta" value="2025" id="año_tarjeta">2025</option>
+          <option name="año_tarjeta" value="2026" id="año_tarjeta">2026</option>
+          <option name="año_tarjeta" value="2027" id="año_tarjeta">2027</option>
+          <option name="año_tarjeta" value="2028" id="año_tarjeta">2028</option>
+          <option name="año_tarjeta" value="2029" id="año_tarjeta">2029</option>
+          <option name="año_tarjeta" value="2030" id="año_tarjeta">2030</option>
+        </select>
+
+        <br />
+        <br />
+        <lebel for="codigo_tarjeta">CCV</lebel>
+        <input type="password" placeholder="Datos al dorso" />
+        <br />
+        <br />
+        <input type="submit" value="Pagar" />
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form action="/destino" method="GET">
+            
+            <label for="destino"> Your Destination 
+                <input type="text" name="destino" div="destino" placeholder="Enter a destination or hotel name">
+            </label>
+
+            <div class="check">
+                
+                <label for="check-in"> Check In
+                    <input type="date" id="check-in">
+                </label>
+
+                <label for="check-out"> Check Out
+                    <input type="date" id="check-out">
+                </label>
+            </div>
+
+            <div class="options">
+                <label for="rooms"> Rooms
+                    <select name="rooms" id="rooms">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+
+                <label for="adults"> Adults
+                    <select name="rooms" id="rooms">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+
+                <label for="children"> Children
+                    <select name="children" id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+            </div>
+
+            <input type="submit" value="Check availability">
+        </form>
+    </main>
+    
+</body>
+</html>

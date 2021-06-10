@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carga de procutos</title>
+  </head>
+  <body>
+    <form action="/pedido" mthod="GET">
+      <label for="marca_bicicleta">Marca</label>
+      <select name="marcas" id="marca_bicicleta">
+        <option value="klatter">Klatter</option>
+        <option value="top_mega">Top Mega</option>
+        <option value="fierce">Fierce</option>
+        <option value="shimano">Shimano</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="aurora">Aurora</option>
+        <option value="gt">GT</option>
+      </select>
+
+      <label for="rodado_bicileta">Rodado</label>
+      <input
+        type="number"
+        id="rodado_bicicleta"
+        placeholder="Ingrese número de rodado"
+      />
+
+      <section>
+        <input
+          type="radio"
+          name="mountain_bike"
+          id="categoria"
+          value="mountain_bike"
+        />
+        <label for="categoria">Mountain Bike</label>
+
+        <input type="radio" name="paseo" id="categoria" value="paseo" />
+        <label for="categoria">Paseo</label>
+
+        <input type="radio" name="plegable" id="categoria" value="plegable" />
+        <label for="categoria">Plegable</label>
+
+        <input type="radio" name="carrera" id="categoria" value="carrera" />
+        <label for="categoria">Carrera</label>
+      </section>
+
+      <textarea rows="10" cols="10"></textarea>
+
+      <input type="submit" value="Cargar" />
+    </form>
+  </body>
+</html>

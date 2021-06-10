@@ -1,0 +1,69 @@
+body,
+html {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+main {
+  width: 100%;
+  margin: 10px 30px;
+}
+
+form {
+  width: 90%;
+  height: 70%;
+  border-radius: 5px;
+  border: solid 2px rgba(172, 255, 47, 0.425);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 10px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+input,
+select {
+  height: 35px;
+  margin-top: 10px;
+  border: solid 2px rgba(128, 128, 128, 0.349);
+  border-radius: 5px;
+}
+
+input:hover {
+  border: solid 1px violet;
+}
+
+select:hover {
+  border: solid 1px violet;
+}
+
+input[type="submit"] {
+  background-color: rgb(19, 108, 224);
+  color: white;
+  padding: 10px;
+  width: 180px;
+  height: 50px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  form {
+    width: 400px;
+    height: 500px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .options select {
+    width: 110px;
+  }
+}

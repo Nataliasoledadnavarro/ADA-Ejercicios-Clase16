@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="formulario_registro">
+        <h2>Formulario de registro</h2>
+        <form action="/contacto" method="POST">
+          <label for="identificacion_de_nombre">Nombre</label>
+
+          <input
+            type="text"
+            name="nombre"
+            id="identificacion_de_nombre"
+            placeholder="Escribí tu nombre"
+          />
+
+          <br />
+          <br />
+
+          <label for="identificacion_de_apellido">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            id="identifiacion_de_apellido"
+            placeholder="Escribí tu apellido"
+          />
+
+          <br />
+          <br />
+
+          <label for="identificacion_dni">DNI</label>
+          <input
+            type="text"
+            name="dni"
+            id="identificacion_dni"
+            placeholder="Ingresá tu dni sin puntos"
+            maxlength="8"
+          />
+
+          <br />
+          <br />
+
+          <label for="e_mail">EMAIL</label>
+          <input
+            type="email"
+            name="email"
+            id="e_mail"
+            placeholder="Ingresá tu email con minúsculas"
+          />
+
+          <br />
+          <br />
+
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="contraseña"
+            placeholder="Ingresá tu contraseña"
+            minlength="8"
+            maxlength="16"
+          />
+
+          <br />
+          <br />
+
+          <label for="repetir_contraseña">Repetir contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="repetir_contraseña"
+            placeholder="Repetí tu contraseña"
+            minlength="8"
+            maxlength="16"
+          />
+
+          <br />
+          <br />
+          <input
+            type="radio"
+            name="terminos_y_condiciones"
+            id="acepta_terminos"
+          />
+          <label for="acepta_terminos"> Acepto terminos y condiciones</label>
+
+          <br />
+          <br />
+
+          <input type="submit" value="REGISTRARSE" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
